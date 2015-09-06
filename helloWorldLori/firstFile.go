@@ -15,7 +15,6 @@ func main() {
 	fmt.Println(names.secondTestFunc)//Can't Use!
 
 
-
 //Below is Personal Use [Not Part Of Assignment]
 	var message2 = "Go Can Infer This Is A String"
 	var d, e, f = 2, false, 3
