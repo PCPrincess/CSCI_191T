@@ -52,4 +52,21 @@ func main(){
 
 	}
 	fmt.Println(sumOfIChecks)
+
+	var wordUp string
+	wordUp = "Word Up!"
+	var count int
+	for len(wordUp) > count {
+		count++
+		fmt.Println(wordUp)
+	}
+
+	for i := 0; i < 5; i++ {
+		fmt.Println("i is ", i)
+	}
+
+	for i, j := 1, 2; i <= 4; i, j = i + 1 , j + 2{
+		var sum int = i + j
+		fmt.Println(sum)
+	}
 }
