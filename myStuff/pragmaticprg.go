@@ -1,5 +1,6 @@
 package main
 
+// Note: move this file to a new repository for CSCI_156 - remove this package (myStuff)
 import "fmt"
 
 type Contact struct {
