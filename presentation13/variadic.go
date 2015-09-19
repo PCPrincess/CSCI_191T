@@ -22,6 +22,7 @@ func main() {
 	fmt.Sscan("%s", &textTest)
 	fmt.Sprint(textTest)
 	// This is going to take a bit more research *Scratches Head*
+	// Note: Try using fmt.Printf (try soon)
 
 
 }
