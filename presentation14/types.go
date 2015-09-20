@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"strconv"
 	"math"
+	"reflect"
 )
 
 func main()  {
@@ -34,20 +35,33 @@ func main()  {
 	fmt.Println(float64(intage) + floatage)
 	fmt.Println(intage + int(floatage))
 
+	var x float64
+	fmt.Print("Enter a decimal number no higher than 100: ")
+	fmt.Scan(&x)
+	fmt.Println(math.Ceil(x))
+
+	conv := "Huzzah!"
+	fmt.Println(reflect.TypeOf(conv))
+	fmt.Println(string('a'))
 	byteToStr := []byte{'W', 'h', 'a', 't', 's'}
 	newString := string(byteToStr) + "up?"
 	fmt.Println(newString)
-
 	strToByte := "Man, this presentation is long!"
 	utfCheck := []byte(strToByte)
 	//fmt.Println("Is my string: " + utfCheck + " in UTF format?")
 	//Error! Can't mix string and byte-slices in an output
 	fmt.Println(utfCheck)
+	fmt.Println(float64(12))
+	//fmt.Println(int(12.12301)) // ERROR!
 
-	var x float64
-	fmt.Print("Enter a decimal number no higher than 100: ")
-	fmt.Scan(&x)
-	fmt.Println(math.Ceil(x))
+
+	var w interface{} = true
+	assrt, ok := w.(bool)
+	if ok {
+		fmt.Println(assrt)
+	}  else {
+		fmt.Println("The value was not the asserted value.")
+	}
 
 
 }
