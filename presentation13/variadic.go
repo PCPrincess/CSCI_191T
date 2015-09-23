@@ -16,6 +16,7 @@ func main() {
 	str := fmt.Sprint("Hey ", name, ",", " your Sprint test works!" )
 	fmt.Println(str)
 	//Note: Was unable to use a 'verb' in Sprint (above) - why?
+	//Note: Fprintf for 'formatted' printing, including verbs (?)
 
 	var textTest string
 	fmt.Print("In order to test Sscan, I'll need you to enter a line of text and hit the enter key.")
