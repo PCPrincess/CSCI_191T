@@ -17,8 +17,11 @@ func main()  {
 	cust2.name = "Sally"
 	fmt.Println(cust2.name)
 
-	cust3 := new(customer) //
-	cust3.name = "Bernie" //
-	fmt.Println(&cust3.name)
+
+	cust3 := new(customer)
+	cust3.name = "Billy"
+	fmt.Println(cust3)
+
+	//Can't use 'make' on structs!
 
 }
