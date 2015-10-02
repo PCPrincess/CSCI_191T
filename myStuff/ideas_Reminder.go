@@ -10,7 +10,8 @@ import (
 func main()  {
 
 	var reminds = make([]string, 5)
-	// Need to re-read slices, obviously
+	// Here, 5 is the 'length', not the capacity.
+	// Adding a second int parameter would signal the capacity.
 
 	type remModule struct {
 		reminder map[struct {}]string
