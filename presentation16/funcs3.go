@@ -16,9 +16,16 @@ func variad(n ...int) int {
 	return temp
 }
 
+func funcExpress(a, b int) int {
+	subTotal := a + b
+	return subTotal
+}
+
 func main()  {
 	//namedReturn(41)
 	fmt.Println(namedReturn(41))
-
 	fmt.Println(variad(1, 3, 5))
+	sumOfAll := namedReturn(3) + funcExpress(4, 5)
+	fmt.Println(sumOfAll)
+	fmt.Printf("%T\n", sumOfAll)
 }
