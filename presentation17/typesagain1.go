@@ -8,6 +8,7 @@ type beverage struct {
 	coffee string
 	sugar bool
 	cream bool
+	//More to learn about declarations (sigh)
 }
 
 func drink (b beverage) {
