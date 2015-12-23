@@ -22,3 +22,16 @@ func main()  {
 	fmt.Println(g)
 	fmt.Println(string(g))
 }
+
+// Web Server Pattern
+// Get data from request reader
+// Get data from database reader
+// Process data
+// Sometimes send data to the database writer
+// If request is a normal request, send data through a template
+// converter to the response writer
+// If request is an AJAX request, send data through a JSON
+// converter to the response writer
+// encoding/json package !!
+// bts, err := json.Marshal(&data)
+// err := json.Unmarshal(bts, &data)
